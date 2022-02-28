@@ -8,7 +8,7 @@ Issues arise when multiple people use the same git repository. The exercises in 
 
 ## Important note about branching
 
-**Main** - This branch is your "local" or "remote" master branch.
+**Main** - This branch is your "local" or "remote" main branch.
 **feature1, feature2 and feature3** - These branches are to be created and used once you get to Exercise 2.
 **Submission** - This branch is only for making your final submission for this lab, and must be used only after you have made all code corrections (for Exercise 1) AND implemented all specified features (for Exercise). Read carefully the instructions and rules associated with this special branch in Exercise 2 description.
 
@@ -69,7 +69,7 @@ When Dev2 and Dev3 try to commit and push their changes, the push should fail an
 The term "non-fast-forward" is a complicated way to say that there is a newer version of the file being pushed on the remote repository, usually because someone else has changed the file and pushed it to the remote repository. The command line message is slightly more useful:
 
 ```
-! [rejected]        master -> master (non-fast-forward)
+! [rejected]        main -> main (non-fast-forward)
 error: failed to push some refs to 'https://github.com/COMPSCI331-2022/week02lab-git.git'
 hint: Updates were rejected because the tip of your current branch is behind
 hint: its remote counterpart. Integrate the remote changes (e.g.
@@ -102,7 +102,7 @@ Now the file affected (in this case <tt>filethatwaschanged.txt</tt>) will have b
 one set of changes
 =======
 the other set of changes
->>>>>>> master
+>>>>>>> main
 ```
 
 What the dev needs to do is figure out how to integrate these two sets of
